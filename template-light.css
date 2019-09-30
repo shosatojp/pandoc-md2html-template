@@ -10,13 +10,12 @@
     --color-h:black;
     --color-sharp: #aaa;
     --color-hr:#8c8b8b;
-}
-
-body {
+}body {
     background: var(--color-body);
     width: 100%;
     margin: 0;
     color: var(--color-text);
+    line-height: calc(1.3rem + 20px);
 }
 
 img {
@@ -26,15 +25,7 @@ img {
     margin:  0 auto;
 }
 
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1,h2,h3,h4,h5,h6,
 p,pre,ul,ol {
     margin: 40px 30px;
 }
@@ -52,7 +43,7 @@ pre>code{
     padding: unset;
 }
 
-blockquote *{
+blockquote>*{
     margin: 20px;
 }
 
@@ -62,7 +53,9 @@ a,code{
     margin: 5px;
     overflow-wrap: break-word;
 }
-
+a{
+    color: var(--color-text);
+}
 a:hover{
     background: var(--color-link-hover);
 }
