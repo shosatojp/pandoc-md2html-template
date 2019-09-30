@@ -2,7 +2,7 @@
 
 ```sh
 # convert test.md -> test.html
-pandoc test.md -t template.html -c template.css -o test.html
+pandoc test.md -t template.html -c template-dark.css -o test.html
 ```
 ## Dark Mode
 ![](./README/000095.png)
