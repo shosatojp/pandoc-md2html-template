@@ -5,13 +5,13 @@
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        $for(author-meta)$
-        <meta name="author" content="$author-meta$" />
+        $for(author)$
+        <meta name="author" content="$author$" />
         $endfor$
         $if(date-meta)$
         <meta name="date" content="$date-meta$" />
         $endif$
-        <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
+        <title>$if(subtitle)$$subtitle$ - $endif$$title$</title>
         <style type="text/css">
             code {
                 white-space: pre;
@@ -45,6 +45,7 @@
         <div class="head">
             <div class="title-wrap">
                 <div class="title">$title$</div>
+                <div class="subtitle">$subtitle$</div>
             </div>
         </div>
         $endif$
@@ -57,6 +58,15 @@
             $include-after$
             $endfor$
         </div>
+        </div>
+        <div class="foot">
+            <div class="author-wrap">
+                Copyright © 
+                $for(author)$
+                <span class="author">$author$</span>
+                $endfor$
+                . All rights reserved.
+            </div>
         </div>
     </body>
 

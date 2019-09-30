@@ -165,5 +165,19 @@ tr:last-child>td {
     justify-content: center;
 }
 .title{
-    margin: 20px;
+    margin: 0 20px;
+}
+.subtitle{
+    font-size: large;
+    margin: 0 30px;
+}
+.foot{
+    height: 100px;
+    background: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.author-wrap{
+    text-align: center;
 }
