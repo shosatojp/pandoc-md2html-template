@@ -12,22 +12,12 @@ body {
 img {
     max-width: 100%;
     max-height: 40vh;
+    display: block;
+    margin:  0 auto;
 }
 
-code {
-    background: none;
-}
 
-pre {
-    background: #ddd;
-    padding: 15px;
-}
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #f8f8f8;
-}
 
 h1,
 h2,
@@ -35,10 +25,35 @@ h3,
 h4,
 h5,
 h6,
-p {
-    margin: 10px;
+p,pre {
+    margin: 40px 10px;
+}
+code {
+    background: none;
 }
 
+pre,blockquote {
+    margin: 40px 40px;
+    background: #ddd;
+    padding: 15px;
+}
+
+blockquote *{
+    margin: 20px;
+}
+
+a,code{
+    background: #ddd;
+    padding: 10px;
+    margin: 5px;
+}
+
+a:hover{
+    background: #aaa;
+}
+a:visited,a:active{
+    color: black;
+}
 
 h1::before {
     content: '#';
@@ -78,7 +93,7 @@ h6::before {
 
 hr {
     border-top: 1px solid #8c8b8b;
-    margin: 10px;
+    margin: 30px;
 }
 
 *::selection {
@@ -99,8 +114,6 @@ table {
     margin: 20px auto;
 }
 
-tr {}
-
 td,
 th {
     border-bottom: 1px solid #aaa;
@@ -110,8 +123,13 @@ th {
 tr:last-child>td {
     border-bottom: none;
 }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
 
-.header {
+.head {
     height: 30vh;
     background: var(--color-blue);
     display: flex;
@@ -119,10 +137,17 @@ tr:last-child>td {
     justify-content: center;
 }
 
-.title {
+.title-wrap {
     max-width: 800px;
     margin: 0 auto;
     width: 100%;
     font-size: xx-large;
     font-weight: bold;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    margin: 20px;
 }
