@@ -4,6 +4,9 @@
 # convert test.md -> test.html
 pandoc test.md -t template.html -c template.css -o test.html
 ```
-
+## Dark Mode
 ![](./README/000095.png)
 ![](./README/000096.png)
+## Light Mode
+![](./README/000097.png)
+![](./README/000098.png)
